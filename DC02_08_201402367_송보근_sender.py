@@ -3,11 +3,10 @@ import os
 
 
 
-ip_addr = 'localhost'
+ip_addr = '192.168.0.11'
 port = 9000
 socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 socket.connect((ip_addr,port))
-
 filename =input("Input your file name : ")
 size = os.path.getsize(filename)
 
